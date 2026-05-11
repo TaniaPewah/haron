@@ -49,6 +49,18 @@ function HomePage() {
       </header>
 
       <main id="main-content" tabIndex={-1}>
+        <section id="gallery" className="section section-gallery section-gallery-first">
+          <div className="container">
+            <h2>{gallery.heading}</h2>
+            <p className="muted">{gallery.description}</p>
+          </div>
+          {localImages.length > 0 && (
+            <div className="gallery-outer">
+              <Carousel images={localImages} />
+            </div>
+          )}
+        </section>
+
         <section id="about" className="section section-about">
           <div className="container">
             <h2>{about.heading}</h2>
@@ -70,16 +82,6 @@ function HomePage() {
         <LoreSection />
 
         <PlayerGallery />
-
-        <section id="gallery" className="section section-gallery">
-          <div className="container">
-            <h2>{gallery.heading}</h2>
-            <p className="muted">{gallery.description}</p>
-            {localImages.length > 0 && (
-              <Carousel images={localImages} />
-            )}
-          </div>
-        </section>
 
         <section id="join" className="section section-join">
           <div className="container">

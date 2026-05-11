@@ -7,6 +7,7 @@ Everguard LARP team website — a dark, immersive single-page experience with lo
 - **Framework:** React 19 + TypeScript + Vite
 - **Styling:** Custom CSS with CSS variables (dark eldritch theme)
 - **Fonts:** UnifrakturMaguntia (display), Inter (body)
+- **Carousel:** Swiper — touch-enabled, centered slides with partial peek, autoplay loop
 - **Routing:** react-router-dom (client-side routing for player detail pages)
 - **Hosting:** Firebase Hosting
 
