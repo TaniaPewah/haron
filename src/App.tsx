@@ -64,6 +64,19 @@ function HomePage() {
         <section id="about" className="section section-about">
           <div className="container">
             <h2>{about.heading}</h2>
+            {about.trailerSrc ? (
+              <figure className="about-trailer">
+                <video
+                  className="about-trailer-video"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  aria-label={about.trailerLabel}
+                >
+                  <source src={about.trailerSrc} type="video/mp4" />
+                </video>
+              </figure>
+            ) : null}
             <p className="lead">{about.body}</p>
           </div>
         </section>

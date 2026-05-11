@@ -1,4 +1,8 @@
 const heroVideo = new URL('../assets/2.mp4', import.meta.url).href;
+const aboutTrailerVideo = new URL(
+  '../../content/WhatsApp Video 2026-02-16 at 20.08.28.mp4',
+  import.meta.url,
+).href;
 
 export const siteContent = {
   hero: {
@@ -22,6 +26,8 @@ export const siteContent = {
     heading: 'מי אנחנו',
     body:
       'חרון חצות הוא מחנה של הנביא אנגאמש רעבים לעוצמה בעולם Everguard. אנו חוקרים סדקים בין־מימדיים, קושרים בריתות עם ישויות אפלות ורודפים ידע וכוח — גם כשהמחיר כבד. מקורותינו מעורבבים: נוודים משבטים שנשברו, פליטי ערים מושחתות, וחוקרי סתר שאיבדו יותר משהרוויחו. הטקסים שלנו עתיקים ומסוכנים; המטרה פשוטה — לגעת במה שמעבר ולהחזיק בו.',
+    trailerSrc: aboutTrailerVideo,
+    trailerLabel: 'טריילר חרון חצות',
   },
   ethos: {
     heading: 'האתוס שלנו',
