@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="520" viewBox="0 0 400 520">
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0a0d"/>
+      <stop offset="100%" stop-color="#15101a"/>
+    </linearGradient>
+    <radialGradient id="glowg" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#b13cff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="520" fill="url(#bgg)"/>
+  <circle cx="200" cy="200" r="150" fill="url(#glowg)"/>
+  <!-- Generic silhouette figure -->
+  <path d="M140 440 L140 290 C140 245 160 200 190 190 C185 150 190 100 205 80 C210 100 215 120 220 135 C225 120 230 100 235 80 C250 100 255 150 250 190 C280 200 300 245 300 290 L300 440 Z" fill="#0e0d12" stroke="rgba(177,60,255,0.2)" stroke-width="1.5"/>
+  <!-- Generic eyes -->
+  <ellipse cx="195" cy="185" rx="6" ry="3" fill="#b13cff" opacity="0.4"/>
+  <ellipse cx="225" cy="185" rx="6" ry="3" fill="#b13cff" opacity="0.4"/>
+  <!-- Frame -->
+  <rect x="8" y="8" width="384" height="504" rx="12" fill="none" stroke="rgba(177,60,255,0.1)" stroke-width="1"/>
+  <text x="200" y="480" text-anchor="middle" fill="rgba(243,240,255,0.25)" font-family="sans-serif" font-size="12" letter-spacing="0.1em">תמונת דמות תגיע בקרוב</text>
+</svg>

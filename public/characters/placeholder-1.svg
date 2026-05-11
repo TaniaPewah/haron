@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="520" viewBox="0 0 400 520">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0a0d"/>
+      <stop offset="100%" stop-color="#1a0f1f"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#b13cff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="520" fill="url(#bg1)"/>
+  <circle cx="200" cy="200" r="140" fill="url(#glow1)"/>
+  <!-- Hooded figure silhouette -->
+  <path d="M120 440 L120 280 C120 230 140 180 180 160 C180 130 190 90 200 70 C210 90 220 130 220 160 C260 180 280 230 280 280 L280 440 Z" fill="#0e0d12" stroke="#b13cff" stroke-width="1.5" stroke-opacity="0.35"/>
+  <!-- Eyes glow -->
+  <ellipse cx="185" cy="155" rx="6" ry="3" fill="#b13cff" opacity="0.7" filter="url(#blur1)"/>
+  <ellipse cx="215" cy="155" rx="6" ry="3" fill="#b13cff" opacity="0.7" filter="url(#blur1)"/>
+  <!-- Bone ornaments -->
+  <circle cx="140" cy="250" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="260" cy="250" r="4" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="150" cy="290" r="3" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="250" cy="290" r="3" fill="rgba(255,255,255,0.08)"/>
+  <!-- Frame border -->
+  <rect x="8" y="8" width="384" height="504" rx="12" fill="none" stroke="rgba(177,60,255,0.15)" stroke-width="1"/>
+</svg>

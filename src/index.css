@@ -1,0 +1,88 @@
+:root {
+  /* Typography */
+  --font-body: Inter, ui-sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-display: 'UnifrakturMaguntia', ui-serif, Georgia, 'Times New Roman', serif;
+  font-size: clamp(16px, 2.5vw, 18px);
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Palette: abyssal nocturne */
+  --color-bg: #0b0a0d;
+  --color-bg-elev: #121017;
+  --color-ink: rgba(243, 240, 255, 0.92);
+  --color-ink-muted: rgba(243, 240, 255, 0.7);
+  --color-accent: #b13cff; /* eldritch violet */
+  --color-accent-2: #ff2f6d; /* blood rose */
+  --color-glow: 0 0 32px rgba(177, 60, 255, 0.35);
+
+  /* Global */
+  color-scheme: dark;
+  color: var(--color-ink);
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  direction: rtl;
+  text-align: right;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(800px 400px at 10% 0%, rgba(177, 60, 255, 0.08), transparent 60%),
+    radial-gradient(900px 500px at 90% -10%, rgba(255, 47, 109, 0.06), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+    var(--color-bg);
+}
+
+h1, h2, h3 { line-height: 1.2; }
+
+a { color: inherit; }
+
+/* Display headings in ritual blackletter */
+h1, h2, .display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect user motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Selection color */
+::selection {
+  background: rgba(177, 60, 255, 0.3);
+  color: white;
+}
+
+/* Subtle animated starfield */
+.veil-stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.2), transparent 40%),
+                    radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.15), transparent 40%),
+                    radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.12), transparent 40%);
+  animation: drift 40s linear infinite;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+@keyframes drift {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-200px); }
+}
